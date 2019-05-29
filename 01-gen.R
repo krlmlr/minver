@@ -17,4 +17,4 @@ tree %>%
   arrange(-generation) %>%
   inner_join(deps, by = "package") %>%
   filter(version != "*") %>%
-  saveRDS("minver/gen.rds")
+  saveRDS("gen.rds")

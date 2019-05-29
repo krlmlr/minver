@@ -1,6 +1,6 @@
 library(tidyverse)
 
-lib <- "minver/lib"
+lib <- "lib"
 unlink(lib, recursive = TRUE, force = TRUE)
 dir.create(lib, showWarnings = FALSE)
 

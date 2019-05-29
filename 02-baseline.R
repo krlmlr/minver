@@ -1,7 +1,7 @@
 library(tidyverse)
 
 gen <-
-  readRDS("minver/gen.rds") %>%
+  readRDS("gen.rds") %>%
   as_tibble()
 
 gen_crandb <-
@@ -15,4 +15,4 @@ baseline <-
   mutate(first_version = map_chr(version, 1)) %>%
   select(-crandb)
 
-saveRDS(baseline, "minver/baseline.rds")
+saveRDS(baseline, "baseline.rds")

@@ -55,9 +55,9 @@ print(pinned)
 libpath <- tempfile("lib")
 dir.create(libpath)
 
-existing <- setdiff(dir("minver/lib"), pinned$package)
+existing <- setdiff(dir("lib"), pinned$package)
 
-stopifnot(all(file.symlink(normalizePath(file.path("minver/lib", existing)), libpath)))
+stopifnot(all(file.symlink(normalizePath(file.path("lib", existing)), libpath)))
 
 invisible(remotes::install_version)
 invisible(rcmdcheck::rcmdcheck)
@@ -85,6 +85,6 @@ new_candidate <-
   select(-next_min_version, -dep)
 
 new_candidate %>%
-  saveRDS(sprintf("minver/candidate-%.4d.rds", n))
+  saveRDS(sprintf("candidate-%.4d.rds", n))
 
 new_candidate
