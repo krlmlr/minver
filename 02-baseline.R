@@ -13,6 +13,7 @@ baseline <-
   gen_crandb %>%
   mutate(version = map(crandb, ~ names(pluck(., "versions")))) %>%
   mutate(first_version = map_chr(version, 1)) %>%
+  mutate(last_version = map_chr(version, tail, 1)) %>%
   select(-crandb)
 
 saveRDS(baseline, "baseline.rds")

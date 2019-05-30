@@ -1,5 +1,7 @@
 library(tidyverse)
 
+source("00-vars.R")
+
 bisect_first_min_version <- function(version) {
   na_versions <- which(map_int(version, length) > 1)
   if (length(na_versions) == 0) stop("All versions determined, move to next script.", call. = FALSE)
@@ -33,12 +35,12 @@ update_bisect_result <- function(version, next_min_version, failure) {
   version
 }
 
-candidate_files <- dir("minver", pattern = "candidate-....[.]rds")
+candidate_files <- dir(pattern = "candidate-....[.]rds")
 
 candidate_file <- tail(candidate_files, 1)[[1]]
 
 candidate <-
-  readRDS(file.path("minver", candidate_file)) %>%
+  readRDS(candidate_file) %>%
   mutate(next_min_version = bisect_first_min_version(version)) %>%
   mutate(dep = if_else(is.na(next_min_version), "*", paste0(">= ", next_min_version)))
 
@@ -69,7 +71,7 @@ result <- safely(
     libpath,
     {
       pwalk(pinned, remotes::install_version, dependencies = character(), upgrade = "never")
-      rcmdcheck::rcmdcheck(error_on = "note")
+      rcmdcheck::rcmdcheck(pkg_path, error_on = "note")
     }
   )
 )()
