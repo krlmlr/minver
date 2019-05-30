@@ -1,5 +1,4 @@
-## "latest" does not work on binder
-FROM rocker/binder:3.6.0
+FROM rocker/binder:latest
 
 ## Copies your repo files into the Docker Container
 USER root
