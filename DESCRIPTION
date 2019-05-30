@@ -5,6 +5,7 @@ Depends:
     crandb,
     cranly,
     desc,
-    tidyverse
+    tidyverse,
+    usethis
 Remotes:
     r-hub/crandb
