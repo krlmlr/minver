@@ -70,9 +70,10 @@ result <- safely(
   ~ withr::with_libpaths(
     libpath,
     {
-      pwalk(pinned, remotes::install_version, dependencies = character(), upgrade = "never")
+      pwalk(pinned, remotes::install_version, dependencies = character(), upgrade = "never", repos = "https://cloud.r-project.org")
       rcmdcheck::rcmdcheck(pkg_path, error_on = "note")
-    }
+    },
+    action = "prefix"
   )
 )()
 

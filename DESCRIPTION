@@ -5,6 +5,7 @@ Depends:
     crandb,
     cranly,
     desc,
+    rcmdcheck,
     tidyverse,
     usethis
 Remotes:
