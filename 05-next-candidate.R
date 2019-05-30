@@ -50,7 +50,8 @@ pinned <-
   candidate %>%
   filter(!is.na(next_min_version)) %>%
   select(package = 1, version = next_min_version) %>%
-  arrange(-row_number())
+  arrange(-row_number()) %>%
+  head(1)
 
 print(pinned)
 
