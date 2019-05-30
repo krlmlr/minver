@@ -73,7 +73,7 @@ result <- safely(
       pwalk(pinned, remotes::install_version, dependencies = character(), upgrade = "never", repos = "https://cloud.r-project.org")
       rcmdcheck::rcmdcheck(pkg_path, error_on = "note")
     },
-    action = "prefix"
+    action = lib_action
   )
 )()
 
