@@ -3,6 +3,7 @@
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
 [![Launch binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/krlmlr/minver/master?urlpath=rstudio)
+[![Launch rstudio.cloud](https://img.shields.io/badge/rstudio-cloud-blue.svg)](https://rstudio.cloud/project/368606)
 <!-- badges: end -->
 
 A workflow for finding the minimum required versions of all packages that your package imports.
@@ -19,7 +20,7 @@ A workflow for finding the minimum required versions of all packages that your p
 
 ## Prerequisites
 
-1. Clone this project and install packages (or launch binder from the badge)
+1. Clone this project and install packages (or launch binder or rstudio.cloud from the badge at the top of this README)
 
     ```r
     # install.packages("remotes")
