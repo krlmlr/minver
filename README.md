@@ -1,8 +1,8 @@
 # minver
 
 <!-- badges: start -->
-[![Launch binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/krlmlr/minver/master)
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![Launch binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/krlmlr/minver/master?urlpath=rstudio)
 <!-- badges: end -->
 
 A workflow for finding the minimum required versions of all packages.
