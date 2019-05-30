@@ -1,5 +1,9 @@
 # minver
 
+<!-- badges: start -->
+[![Launch binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/krlmlr/minver/master)
+<!-- badges: end -->
+
 A workflow for finding the minimum required versions of all packages.
 
 ## How does it work?
