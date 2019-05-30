@@ -21,6 +21,11 @@ A workflow for finding the minimum required versions of all packages.
 
 1. Clone this project and install packages (or launch binder from the badge)
 
+    ```r
+    # install.packages("remotes")
+    remotes::install_deps()
+    ```
+
 1. Clone the package you want to find minimum versions for
 
 1. Adapt `00-*.R` to point to your package
