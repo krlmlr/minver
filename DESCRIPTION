@@ -1,0 +1,10 @@
+Package: minver
+Title: What are the minimum dependencies for your package?
+Encoding: UTF-8
+Depends:
+    crandb,
+    cranly,
+    desc,
+    tidyverse
+Remotes:
+    r-hub/crandb

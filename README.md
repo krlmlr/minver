@@ -12,6 +12,14 @@ A workflow for finding the minimum required versions of all packages.
 
 4. The minimum version for each package is written to the `DESCRIPTION` .
 
+## Prerequisites
+
+1. Clone this project and install packages (or launch binder from the badge)
+
+1. Clone the package you want to find minimum versions for
+
+1. Adapt `00-*.R` to point to your package
+
 ## Run it
 
 Copy the `minver` directory into the root of your package, call `usethis::use_build_ignore("minver")`.
