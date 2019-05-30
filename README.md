@@ -5,7 +5,7 @@
 [![Launch binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/krlmlr/minver/master?urlpath=rstudio)
 <!-- badges: end -->
 
-A workflow for finding the minimum required versions of all packages.
+A workflow for finding the minimum required versions of all packages that your package imports.
 
 ## How does it work?
 
