@@ -27,8 +27,6 @@ A workflow for finding the minimum required versions of all packages.
 
 ## Run it
 
-Copy the `minver` directory into the root of your package, call `usethis::use_build_ignore("minver")`.
-
 Run each script `??-*.R` in sequence, the `05-*.R` script must be run repeatedly until the error `"All versions determined, move to next script."` is raised.
 
 The following files are created:
