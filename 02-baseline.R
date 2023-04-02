@@ -1,5 +1,7 @@
 library(tidyverse)
 
+# pak::pak("r-hub/crandb")
+
 gen <-
   readRDS("gen.rds") %>%
   as_tibble()
