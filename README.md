@@ -2,7 +2,7 @@
 
 <!-- badges: start -->
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
-[![Launch binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/krlmlr/minver/master?urlpath=rstudio)
+[![Launch binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/krlmlr/minver/main?urlpath=rstudio)
 [![Launch rstudio.cloud](https://img.shields.io/badge/rstudio-cloud-blue.svg)](https://rstudio.cloud/project/368606)
 <!-- badges: end -->
 
