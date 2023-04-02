@@ -1,5 +1,7 @@
 library(tidyverse)
 
+source("00-vars.R")
+
 db <- cranly::clean_CRAN_db()
 network <- cranly::build_network(db)
 tree <- cranly::compute_dependence_tree(network, my_package)
