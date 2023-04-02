@@ -2,6 +2,8 @@ library(tidyverse)
 
 source("00-vars.R")
 
+Sys.setenv("_R_CHECK_PKG_SIZES_" = "FALSE")
+
 bisect_first_min_version <- function(version) {
   na_versions <- which(map_int(version, length) > 1)
   if (length(na_versions) == 0) stop("All versions determined, move to next script.", call. = FALSE)
